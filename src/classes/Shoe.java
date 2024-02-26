@@ -4,6 +4,7 @@ package classes;
 import components.Cover;
 import components.ShoeHeel;
 import components.ShoeTongue;
+import components.Sole;
 import enums.Material;
 import enums.ShoeType;
 
@@ -13,13 +14,15 @@ public class Shoe {
     private Cover cover;
     private ShoeHeel shoeHeel;
     private ShoeTongue shoeTongue;
+    private Sole sole;
 
-    public Shoe(ShoeType shoeType, Material material, Cover cover, ShoeHeel shoeHeel, ShoeTongue shoeTongue) {
+    public Shoe(ShoeType shoeType, Material material, Cover cover, ShoeHeel shoeHeel, ShoeTongue shoeTongue, Sole sole) {
         this.shoeType = shoeType;
         this.material = material;
         this.cover = cover;
         this.shoeHeel = shoeHeel;
         this.shoeTongue = shoeTongue;
+        this.sole = sole;
     }
 
     public ShoeType getShoeType() {
@@ -61,4 +64,8 @@ public class Shoe {
     public void setShoeTongue(ShoeTongue shoeTongue) {
         this.shoeTongue = shoeTongue;
     }
+
+    public Sole getSole() { return sole; }
+
+    public void setSole(Sole sole) { this.sole = sole; }
 }
