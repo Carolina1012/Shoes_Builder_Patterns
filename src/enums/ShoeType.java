@@ -5,5 +5,5 @@ import components.ShoeHeel;
 import components.ShoeTongue;
 
 public enum ShoeType {
-    LACES_SHOES, HEELS_SHOES, ERGONOMIC_SHOES, VELCRO_SHOES
+    LACES_SHOE, HEELS_SHOE, ERGONOMIC_SHOE, VELCRO_SHOE
 }

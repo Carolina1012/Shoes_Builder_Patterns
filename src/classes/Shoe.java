@@ -7,14 +7,14 @@ import components.ShoeTongue;
 import enums.Material;
 import enums.ShoeType;
 
-public class Shoes {
+public class Shoe {
     private ShoeType shoeType;
     private Material material;
     private Cover cover;
     private ShoeHeel shoeHeel;
     private ShoeTongue shoeTongue;
 
-    public Shoes(ShoeType shoeType, Material material, Cover cover, ShoeHeel shoeHeel, ShoeTongue shoeTongue) {
+    public Shoe(ShoeType shoeType, Material material, Cover cover, ShoeHeel shoeHeel, ShoeTongue shoeTongue) {
         this.shoeType = shoeType;
         this.material = material;
         this.cover = cover;

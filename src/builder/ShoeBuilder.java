@@ -1,13 +1,13 @@
 package builder;
 
-import classes.Shoes;
+import classes.Shoe;
 import components.Cover;
 import components.ShoeHeel;
 import components.ShoeTongue;
 import enums.Material;
 import enums.ShoeType;
 
-public class ShoesBuilder implements Builder  {
+public class ShoeBuilder implements Builder  {
 
         private ShoeType shoeType;
         private Material material;
@@ -37,8 +37,13 @@ public class ShoesBuilder implements Builder  {
         }
 
         @Override
-        public Shoes getShoes() {
-            return new Shoes(this.shoeType, this.material, this.cover, this.shoeHeel, this.shoeTongue);
+        public Shoe getShoe() {
+            return new Shoe(this.shoeType, this.material, this.cover, this.shoeHeel, this.shoeTongue);
         }
+
+
+
+
+
 }
 

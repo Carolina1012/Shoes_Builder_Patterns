@@ -1,6 +1,6 @@
 package builder;
 
-import classes.Shoes;
+import classes.Shoe;
 import components.Cover;
 import components.ShoeHeel;
 import components.ShoeTongue;
@@ -14,5 +14,5 @@ public interface Builder {
     void setShoeHeel(ShoeHeel shoeHeel);
     void setShoeTongue(ShoeTongue shoeTongue);
 
-    Shoes getShoes();
+    Shoe getShoe();
 }
