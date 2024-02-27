@@ -6,6 +6,7 @@ import components.ShoeHeel;
 import components.ShoeTongue;
 import enums.Material;
 import enums.ShoeType;
+import enums.PadMaterial;
 
 public class Shoe {
     private ShoeType shoeType;
@@ -13,6 +14,7 @@ public class Shoe {
     private Cover cover;
     private ShoeHeel shoeHeel;
     private ShoeTongue shoeTongue;
+    private PadMaterial padMaterial;
 
     public Shoe(ShoeType shoeType, Material material, Cover cover, ShoeHeel shoeHeel, ShoeTongue shoeTongue) {
         this.shoeType = shoeType;
@@ -20,6 +22,7 @@ public class Shoe {
         this.cover = cover;
         this.shoeHeel = shoeHeel;
         this.shoeTongue = shoeTongue;
+        this.padMaterial = padMaterial;
     }
 
     public ShoeType getShoeType() {
@@ -60,5 +63,9 @@ public class Shoe {
 
     public void setShoeTongue(ShoeTongue shoeTongue) {
         this.shoeTongue = shoeTongue;
+    }
+
+    public void setPadMaterial(PadMaterial padMaterial) {
+        this.padMaterial = padMaterial;
     }
 }
