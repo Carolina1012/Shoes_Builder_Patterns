@@ -1,0 +1,5 @@
+package enums;
+
+public enum SoleMaterial {
+    GUM_RUBBER, NEOPRENE, CORK, CREPE, LEATHER, POLYURETHANE, ETHYLENE_VINYL_ACETATE
+}
