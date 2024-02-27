@@ -1,5 +1,2 @@
-package enums;
-
-public enum PadMaterial {
-    GEL_PAD, SILICONE_PAD
+package enums;public class PadMaterial {
 }
