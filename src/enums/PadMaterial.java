@@ -1,4 +1,4 @@
 package enums;
-public class PadMaterial {
-    
+public enum PadMaterial {
+    GEL_PAD, SILICONE_PAD
 }
