@@ -19,11 +19,11 @@ public class Cover {
         this.withCover = withCover;
     }
 
-    public void withCover()  {
-        withCover  = true;
+    public void withCover() {
+        withCover = true;
     }
 
-    public void withoutCover()  {
+    public void withoutCover() {
         withCover = false;
     }
 

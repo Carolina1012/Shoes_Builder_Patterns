@@ -1,6 +1,7 @@
 package components;
 
 import enums.PadMaterial;
+
 public class ShoePad {
     private PadMaterial padMaterial;
     private boolean AntiSlip;
@@ -9,7 +10,7 @@ public class ShoePad {
     private boolean AnatomicShape;
     private boolean MemoryFoam;
 
-    public  ShoePad(PadMaterial padMaterial, boolean AntiSlip, boolean Universal, boolean Washable, boolean AnatomicShape, boolean MemoryFoam) {
+    public ShoePad(PadMaterial padMaterial, boolean AntiSlip, boolean Universal, boolean Washable, boolean AnatomicShape, boolean MemoryFoam) {
         this.padMaterial = padMaterial;
         this.AntiSlip = AntiSlip;
         this.Universal = Universal;

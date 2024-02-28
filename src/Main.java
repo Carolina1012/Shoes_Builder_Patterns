@@ -9,6 +9,6 @@ public class Main {
         ShoeBuilder shoeBuilder = new ShoeBuilder();
         ShoeBuilderDirector.buildLacesShoe(shoeBuilder);
         shoe = shoeBuilder.getShoe();
-        System.out.println("Shoe built: " + shoe.getShoeType());
+        shoe.descriptiveTicket();
     }
 }

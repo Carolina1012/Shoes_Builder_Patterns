@@ -16,7 +16,6 @@ public class ShoeLace {
     }
 
 
-
     public LaceColor getLaceColor() {
         return laceColor;
     }
@@ -32,6 +31,7 @@ public class ShoeLace {
     public void setLaceType(LaceType laceType) {
         this.laceType = laceType;
     }
+
     public boolean isHasLaces() {
         return hasLaces;
     }
