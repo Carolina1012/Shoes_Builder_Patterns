@@ -7,8 +7,10 @@ import components.ShoeLace;
 import components.ShoeTongue;
 import enums.LaceColor;
 import enums.LaceType;
+import components.Sole;
 import enums.Material;
 import enums.ShoeType;
+import enums.PadMaterial;
 
 public class ShoeBuilder implements Builder  {
 
@@ -17,9 +19,14 @@ public class ShoeBuilder implements Builder  {
         private Cover cover;
         private ShoeHeel shoeHeel;
         private ShoeTongue shoeTongue;
+
         private ShoeLace shoeLace;
         private LaceColor laceColor;
         private LaceType laceType;
+
+        private PadMaterial padMaterial;
+
+        private Sole sole;
 
 
 
@@ -43,27 +50,32 @@ public class ShoeBuilder implements Builder  {
         }
 
         @Override
+
         public void setShoeLace(ShoeLace shoeLace) {
                 this.shoeLace = shoeLace;
         }
 
-        //@Override
-        public void setLaceColor(LaceColor laceColor) {
-                this.laceColor = laceColor;
+
+//        @Override
+//        public Shoe getShoe() {
+//                return new Shoe(this.shoeType, this.material, this.cover, this.shoeHeel, this.shoeTongue, this.shoeLace, this.laceColor, this.laceType);
+//        }
+
+        public void setPadMaterial(PadMaterial padMaterial) {
+            this.padMaterial = padMaterial;
         }
 
-        public void setLaceType(LaceType laceType) {
-                this.laceType = laceType;
+//        @Override
+//        public Shoe getShoe() {
+//                        return new Shoe(this.shoeType, this.material, this.cover, this.shoeHeel, this.shoeTongue);
+//        }
+        public void setShoeSole(Sole sole) {
+                this.sole = sole;
         }
 
         @Override
         public Shoe getShoe() {
-            return new Shoe(this.shoeType, this.material, this.cover, this.shoeHeel, this.shoeTongue, this.shoeLace, this.laceColor, this.laceType);
+            return new Shoe(this.shoeType, this.material, this.cover, this.shoeHeel, this.shoeTongue, this.shoeLace, this.laceColor, this.laceType, this.sole, this.padMaterial);
         }
-
-
-
-
-
 }
 
