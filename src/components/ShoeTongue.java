@@ -20,11 +20,12 @@ public class ShoeTongue {
     public void setHaveTongue(boolean haveTongue) {
         this.haveTongue = haveTongue;
     }
-    public void haveTongue()  {
-        isRemovable  = true;
+
+    public void haveTongue() {
+        isRemovable = true;
     }
 
-    public void haveNotTongue()  {
+    public void haveNotTongue() {
         isRemovable = false;
     }
 
@@ -36,11 +37,11 @@ public class ShoeTongue {
         isRemovable = removable;
     }
 
-    public void removable()  {
-        isRemovable  = true;
+    public void removable() {
+        isRemovable = true;
     }
 
-    public void notRemovable()  {
+    public void notRemovable() {
         isRemovable = false;
     }
 

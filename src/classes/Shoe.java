@@ -1,16 +1,8 @@
 package classes;
 
 
-import components.Cover;
-import components.ShoeHeel;
-import components.ShoeLace;
-import components.ShoeTongue;
-import enums.LaceColor;
-import enums.LaceType;
-import components.Sole;
-import enums.Material;
-import enums.ShoeType;
-import enums.PadMaterial;
+import components.*;
+import enums.*;
 
 public class Shoe {
     private ShoeType shoeType;
@@ -107,8 +99,43 @@ public class Shoe {
     public void setPadMaterial(PadMaterial padMaterial) {
         this.padMaterial = padMaterial;
     }
-    public Sole getSole() { return sole; }
 
-    public void setSole(Sole sole) { this.sole = sole; }
+    public Sole getSole() {
+        return sole;
+    }
+
+    public void setSole(Sole sole) {
+        this.sole = sole;
+    }
+
+    public void descriptiveTicket() {
+        System.out.println("\u001B[35mDescriptive Ticket\u001B[0m");
+        System.out.println("\u001B[34mShoe Type: " + "[" + shoeType + "]");
+        System.out.println("\u001B[34mMaterial: " + "[" + material + "]");
+        System.out.println("\u001B[34mCover:");
+        System.out.println("\u001B[33mWith Cover: " + "[" + cover.isWithCover() + "]");
+        System.out.println("\u001B[33mCover Material: " + "[" + cover.getMaterial() + "]");
+        System.out.println("\u001B[34mHeel:");
+        System.out.println("\u001B[33mHeel Material: " + "[" + shoeHeel.getMaterial() + "]");
+        System.out.println("\u001B[33mHeel Height: " + "[" + shoeHeel.getHeight() + " cm" + "]");
+        System.out.println("\u001B[33mWith Strip: " + "[" + shoeHeel.isWithStrip() + "]");
+        System.out.println("\u001B[34mTongue:");
+        System.out.println("\u001B[33mHave tongue: " + "[" + shoeTongue.isHaveTongue() + "]");
+        System.out.println("\u001B[33mIt is Removable: " + "[" + shoeTongue.isRemovable() + "]");
+        System.out.println("\u001B[33mTongue Material: " + "[" + shoeTongue.getMaterial() + "]");
+        System.out.println("\u001B[34mLace:");
+        System.out.println("\u001B[33mLace Color: " + "[" + shoeLace.getLaceColor() + "]");
+        System.out.println("\u001B[33mLace Type: " + "[" + shoeLace.getLaceType() + "]");
+        System.out.println("\u001B[33mWith Laces: " + "[" + shoeLace.isHasLaces() + "]");
+        System.out.println("\u001B[34mPad Material: " + "[" + padMaterial.name() + "]");
+        System.out.println("\u001B[34mSole:");
+        System.out.println("\u001B[33mSole Material: " + "[" + sole.getSoleMaterial() + "]");
+        System.out.println("\u001B[33mWater Proof: " + "[" + sole.isWaterproof() + "]");
+        System.out.println("\u001B[33mBreatheble: " + "[" + sole.isBreathable() + "]");
+        System.out.println("\u001B[33mFlexible: " + "[" + sole.isFlexible() + "]");
+        System.out.println("\u001B[33mDurable: " + "[" + sole.isDurable() + "]");
+
+
+    }
 
 }

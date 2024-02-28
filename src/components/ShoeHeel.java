@@ -38,11 +38,11 @@ public class ShoeHeel {
         this.withStrip = withStrip;
     }
 
-    public void withStrip()  {
-        withStrip  = true;
+    public void withStrip() {
+        withStrip = true;
     }
 
-    public void withoutStrip()  {
+    public void withoutStrip() {
         withStrip = false;
     }
 }
