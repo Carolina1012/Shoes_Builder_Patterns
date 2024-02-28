@@ -3,6 +3,7 @@ package builder;
 import classes.Shoe;
 import components.Cover;
 import components.ShoeHeel;
+import components.ShoeLace;
 import components.ShoeTongue;
 import components.Sole;
 import enums.Material;
@@ -17,6 +18,8 @@ public interface Builder {
     void setShoeTongue(ShoeTongue shoeTongue);
     void setPadMaterial(PadMaterial padMaterial);
     void setShoeSole(Sole sole);
+
+    void setShoeLace(ShoeLace shoeLace);
 
     Shoe getShoe();
 }

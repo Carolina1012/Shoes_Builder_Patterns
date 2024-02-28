@@ -3,7 +3,10 @@ package classes;
 
 import components.Cover;
 import components.ShoeHeel;
+import components.ShoeLace;
 import components.ShoeTongue;
+import enums.LaceColor;
+import enums.LaceType;
 import components.Sole;
 import enums.Material;
 import enums.ShoeType;
@@ -18,12 +21,20 @@ public class Shoe {
     private PadMaterial padMaterial;
     private Sole sole;
 
-    public Shoe(ShoeType shoeType, Material material, Cover cover, ShoeHeel shoeHeel, ShoeTongue shoeTongue, Sole sole) {
+
+    private ShoeLace shoeLace;
+    private LaceColor laceColor;
+    private LaceType laceType;
+
+    public Shoe(ShoeType shoeType, Material material, Cover cover, ShoeHeel shoeHeel, ShoeTongue shoeTongue, ShoeLace shoeLace, LaceColor laceColor, LaceType laceType, Sole sole, PadMaterial padMaterial) {
         this.shoeType = shoeType;
         this.material = material;
         this.cover = cover;
         this.shoeHeel = shoeHeel;
         this.shoeTongue = shoeTongue;
+        this.shoeLace = shoeLace;
+        this.laceColor = laceColor;
+        this.laceType = laceType;
         this.padMaterial = padMaterial;
         this.sole = sole;
     }
@@ -68,10 +79,36 @@ public class Shoe {
         this.shoeTongue = shoeTongue;
     }
 
+
+    public ShoeLace getShoeLace() {
+        return shoeLace;
+    }
+
+    public void setShoeLace(ShoeLace shoeLace) {
+        this.shoeLace = shoeLace;
+    }
+
+    public LaceColor getLaceColor() {
+        return laceColor;
+    }
+
+    public void setLaceColor(LaceColor laceColor) {
+        this.laceColor = laceColor;
+    }
+
+    public LaceType getLaceType() {
+        return laceType;
+    }
+
+    public void setLaceType(LaceType laceType) {
+        this.laceType = laceType;
+    }
+
     public void setPadMaterial(PadMaterial padMaterial) {
         this.padMaterial = padMaterial;
     }
     public Sole getSole() { return sole; }
 
     public void setSole(Sole sole) { this.sole = sole; }
+
 }
