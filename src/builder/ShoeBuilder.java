@@ -4,6 +4,7 @@ import classes.Shoe;
 import components.Cover;
 import components.ShoeHeel;
 import components.ShoeTongue;
+import components.Sole;
 import enums.Material;
 import enums.ShoeType;
 import enums.PadMaterial;
@@ -17,6 +18,7 @@ public class ShoeBuilder implements Builder  {
         private ShoeTongue shoeTongue;
         private PadMaterial padMaterial;
 
+        private Sole sole;
 
 
 
@@ -47,11 +49,13 @@ public class ShoeBuilder implements Builder  {
         @Override
         public Shoe getShoe() {
             return new Shoe(this.shoeType, this.material, this.cover, this.shoeHeel, this.shoeTongue);
+        public void setShoeSole(Sole sole) {
+                this.sole = sole;
         }
 
-
-
-
-
+        @Override
+        public Shoe getShoe() {
+            return new Shoe(this.shoeType, this.material, this.cover, this.shoeHeel, this.shoeTongue, this.sole);
+        }
 }
 
